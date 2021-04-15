@@ -45,7 +45,7 @@ const Navbar = () => {
                 );
               })}
             </ul>
-            <div>
+            <div className="btn-div">
               <button className="request-btn">request invite</button>
             </div>
           </div>
