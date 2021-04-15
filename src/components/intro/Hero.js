@@ -1,10 +1,14 @@
 import React from "react";
 import BgIcon from "../../images/bg-intro-desktop.svg";
+
 import "./hero.css";
 
 function Hero() {
   return (
     <div className="hero">
+      <div className="mobile-right">
+        <img src={BgIcon} alt="" />
+      </div>
       <div className="left">
         <h1 className="title">Next generation digital banking</h1>
         <p className="sub-title">
@@ -12,7 +16,9 @@ function Hero() {
           one-stop-shop for spending, saving, budgeting, investing, and much
           more.
         </p>
-        <button className="request-btn">request invite</button>
+        <div>
+          <button className="request-btn">request invite</button>
+        </div>
       </div>
       <div className="right">
         <img src={BgIcon} alt="" />

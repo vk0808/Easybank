@@ -6,7 +6,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.15rem 1rem;
+  padding: 1rem 1rem 0.5rem;
 }
 .logo {
   padding-bottom: 1rem;
@@ -30,7 +30,7 @@ nav {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
-  padding: 0 1rem 0;
+  padding: 0.5rem 1rem 0;
   transition: var(--transition);
 }
 .links-container {
@@ -40,9 +40,6 @@ nav {
 }
 .show-container {
   height: 10rem;
-}
-.btn-div {
-  margin-top: -1.5rem;
 }
 .request-btn {
   font-weight: 400;
@@ -73,6 +70,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 0;
     padding-top: 2rem;
   }
@@ -89,6 +88,9 @@ nav {
   .links {
     display: flex;
   }
+  .links a {
+    padding: 0 1rem 0;
+  }
   .links a:after {
     content: "";
     display: block;
@@ -97,5 +99,8 @@ nav {
   }
   .links a:hover:after {
     border-bottom: var(--border) solid var(--clr-lime-green);
+  }
+  .btn-div {
+    margin-top: -1.5rem;
   }
 }
