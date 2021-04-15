@@ -12,25 +12,28 @@ const Navbar = () => {
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (showLinks) {
-      linksContainerRef.current.style.height = `${linksHeight}px`;
+      linksContainerRef.current.style.height = `${linksHeight + 50}px`;
     } else {
       linksContainerRef.current.style.height = "0px";
     }
   }, [showLinks]);
-  
+
   return (
     <>
       <nav>
         <div className="nav-center">
           <div className="nav-header">
-            <img src={Icon} alt="logo" className="logo" />
-            <button
-              className="nav-toggle"
-              onClick={() => setShowLinks(!showLinks)}
-            >
-              <FaBars />
-            </button>
+            <div>
+              <img src={Icon} alt="logo" className="logo" />
+              <button
+                className="nav-toggle"
+                onClick={() => setShowLinks(!showLinks)}
+              >
+                <FaBars />
+              </button>
+            </div>
           </div>
+
           <div className="links-container" ref={linksContainerRef}>
             <ul className="links" ref={linksRef}>
               {links.map((link) => {
@@ -42,6 +45,9 @@ const Navbar = () => {
                 );
               })}
             </ul>
+            <div>
+              <button className="request-btn">request invite</button>
+            </div>
           </div>
         </div>
       </nav>
