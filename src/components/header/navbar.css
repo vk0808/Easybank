@@ -93,6 +93,9 @@ nav {
     var(--clr-bright-cyan) 100%
   );
 }
+.request-btn:hover {
+  opacity: 0.6;
+}
 @media screen and (max-width: 800px) {
   .request-btn {
     margin: 10px;
