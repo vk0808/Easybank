@@ -35,7 +35,8 @@
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
-  --radius: 0.25rem;
+  --radius: 1rem;
+  --border: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -48,7 +49,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.15rem 1rem;
+}
+.nav-header div {
+  display: contents;
 }
 .nav-toggle {
   font-size: 1.5rem;
@@ -63,7 +67,7 @@ nav {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem 0;
   transition: var(--transition);
 }
 .links-container {
@@ -74,6 +78,26 @@ nav {
 .show-container {
   height: 10rem;
 }
+.request-btn {
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+  border: none;
+  margin-bottom: 0.7rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: var(--radius);
+  background: linear-gradient(
+    90deg,
+    var(--clr-lime-green) 0%,
+    var(--clr-bright-cyan) 100%
+  );
+}
+@media screen and (max-width: 800px) {
+  .request-btn {
+    margin: 10px;
+  }
+}
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
@@ -81,7 +105,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
     padding-bottom: 0;
   }
   .nav-header {
@@ -92,22 +115,18 @@ nav {
   }
   .links-container {
     height: auto !important;
+    display: contents;
   }
   .links {
     display: flex;
   }
-  .links a {
-    padding: 0;
-    margin: 0 0.5rem;
-  }
   .links a:after {
     content: "";
     display: block;
-    margin: 0 auto;
     padding-top: 1rem;
-    border-bottom: 2px solid transparent;
+    border-bottom: var(--border) solid transparent;
   }
   .links a:hover:after {
-    border-bottom: 2px solid var(--clr-lime-green);
+    border-bottom: var(--border) solid var(--clr-lime-green);
   }
 }
