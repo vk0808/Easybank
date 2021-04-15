@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+}
+.left {
+  padding: 8rem 1rem 0 7rem;
+  width: 80%;
+}
+.right {
+  position: relative;
+  top: -260px;
+  z-index: -99;
+  overflow: hidden;
+}
+.title {
+  font-weight: 400;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: var(--clr-dark-blue);
+}
+
+.sub-title {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--grayish-blue);
+  margin-bottom: 2rem;
+}
