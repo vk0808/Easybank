@@ -6,9 +6,6 @@ import "./hero.css";
 function Hero() {
   return (
     <div className="hero">
-      <div className="mobile-right">
-        <img src={BgIcon} alt="" />
-      </div>
       <div className="left">
         <h1 className="title">Next generation digital banking</h1>
         <p className="sub-title">
