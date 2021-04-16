@@ -79,6 +79,7 @@ h4 {
 } */
 h1 {
   font-size: 3rem;
+  line-height: 1.2;
   color: var(--clr-dark-blue);
 }
 h2 {
