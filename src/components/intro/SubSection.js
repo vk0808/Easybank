@@ -7,7 +7,7 @@ import logo_4 from "../../images/icon-api.svg";
 
 function SubSection() {
   return (
-    <section>
+    <section className="feature">
       <div className="section-top">
         <h1 className="head">Why choose Easybank?</h1>
         <p className="sub-head">
