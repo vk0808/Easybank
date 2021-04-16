@@ -29,6 +29,33 @@
   transform: scale(0.65);
   z-index: -22;
 }
+section {
+  padding: 3rem 8rem;
+  background-color: var(--light-grayish-blue);
+}
+.section-top {
+  margin-bottom: 1rem;
+}
+.head {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.sub-head {
+  font-size: 1.2rem;
+}
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.feature-logo img {
+  margin: 2rem 0;
+}
+.feature-list h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
 @media screen and (max-width: 600px) {
   .hero {
     flex-direction: column-reverse;
@@ -36,8 +63,18 @@
   .left {
     text-align: center;
   }
+  section {
+    padding: 3rem;
+    text-align: center;
+  }
+  .head {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (min-width: 600px) {
+  .hero {
+    max-height: 500px;
+  }
   .right {
     height: auto;
   }
@@ -50,16 +87,19 @@
     width: 200%;
     padding: 2rem;
   }
+  section .section-top {
+    max-width: 60%;
+  }
+  .feature-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (min-width: 900px) {
   .hero {
-    flex-direction: column;
+    max-height: 550px;
   }
   .title {
     font-size: 4rem;
-  }
-  .hero {
-    flex-direction: row;
   }
   .left {
     padding: 6rem 1rem 0 6rem;
@@ -69,8 +109,14 @@
     top: -300px;
     transform: scale(0.55);
   }
+  .feature-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @media screen and (min-width: 1100px) {
+  .hero {
+    max-height: 600px;
+  }
   .left {
     width: 80%;
     padding: 8rem 1rem 0 7rem;
