@@ -30,7 +30,7 @@ nav {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
-  padding: 0.5rem 1rem 0;
+  padding: 0.5rem 2.5rem 0;
   transition: var(--transition);
 }
 .links-container {

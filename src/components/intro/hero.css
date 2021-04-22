@@ -80,10 +80,12 @@ figure img {
   height: 200px;
   border-radius: 0.5rem 0.5rem 0 0;
 }
+.post {
+  border-radius: 0.5rem;
+  background: var(--clr-white);
+}
 .inner-detail {
   padding: 1rem 1.5rem;
-  background: var(--clr-white);
-  border-radius: 0 0 0.5rem 0.5rem;
 }
 figcaption {
   color: var(--grayish-blue);
