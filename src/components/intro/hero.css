@@ -57,7 +57,6 @@
 }
 .feature-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
 }
 .feature-logo img {
@@ -178,9 +177,6 @@ figcaption {
   .feature .section-top {
     max-width: 60%;
   }
-  .feature-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @media screen and (min-width: 900px) {
   .hero {
@@ -200,9 +196,6 @@ figcaption {
     top: -15vh;
     left: 45vw;
     transform: scale(0.8);
-  }
-  .feature-container {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (min-width: 1240px) {
@@ -244,5 +237,20 @@ figcaption {
     top: -10vh;
     left: 60vw;
     transform: scale(1.2);
+  }
+}
+@media screen and (max-width: 500px) {
+  .feature-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 501px) {
+  .feature-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .feature-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
