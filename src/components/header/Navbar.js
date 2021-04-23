@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { links } from "./links";
-import Icon from "../../images/logo.svg";
+import { ReactComponent as Logo } from "../../images/logo.svg";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="nav-center">
           <div className="nav-header">
             <div>
-              <img src={Icon} alt="logo" className="logo" />
+              <Logo className="logo" />
               <button
                 className="nav-toggle"
                 onClick={() => setShowLinks(!showLinks)}
