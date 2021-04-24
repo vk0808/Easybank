@@ -41,7 +41,6 @@ footer {
   color: var(--clr-lime-green);
 }
 .footer-right {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,6 +49,7 @@ footer {
   footer {
     flex-direction: column;
     text-align: center;
+    row-gap: 2rem;
   }
   .footer-left {
     flex-direction: column;
