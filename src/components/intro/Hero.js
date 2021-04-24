@@ -1,5 +1,5 @@
 import React from "react";
-import BgIcon from "../../images/bg-intro-desktop.svg";
+import { ReactComponent as BgIcon } from "../../images/bg-intro-desktop.svg";
 import Mockup from "../../images/image-mockups.png";
 
 import "./hero.css";
@@ -19,7 +19,7 @@ function Hero() {
         </div>
       </div>
       <div className="right">
-        <img className="bg-icon" src={BgIcon} alt="" />
+        <BgIcon className="bg-icon" />
         <img className="mock" src={Mockup} alt="" />
       </div>
     </div>
