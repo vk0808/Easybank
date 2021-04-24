@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 import { links } from "./links";
 import { ReactComponent as Logo } from "../../images/logo.svg";
 import "./navbar.css";
@@ -40,7 +42,7 @@ const Navbar = () => {
                 const { id, url, text } = link;
                 return (
                   <li key={id}>
-                    <a href={url}>{text}</a>
+                    <Link to={url}>{text}</Link>
                   </li>
                 );
               })}

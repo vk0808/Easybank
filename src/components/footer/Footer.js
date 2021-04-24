@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { links } from "./dataFooter";
 import { ReactComponent as Facebook } from "../../images/icon-facebook.svg";
 import { ReactComponent as Youtube } from "../../images/icon-youtube.svg";
@@ -6,7 +8,6 @@ import { ReactComponent as Twitter } from "../../images/icon-twitter.svg";
 import { ReactComponent as Pinterest } from "../../images/icon-pinterest.svg";
 import { ReactComponent as Instagram } from "../../images/icon-instagram.svg";
 import { ReactComponent as Logo } from "../../images/logo.svg";
-
 import "./footer.css";
 
 function Footer() {
@@ -41,7 +42,7 @@ function Footer() {
               const { id, text, url } = link;
               return (
                 <p key={id}>
-                  <a href={url}>{text}</a>
+                  <Link to={url}>{text}</Link>
                 </p>
               );
             })}

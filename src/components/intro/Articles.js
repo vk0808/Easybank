@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { article } from "./article";
 import img_1 from "../../images/image-currency.jpg";
 import img_2 from "../../images/image-restaurant.jpg";
@@ -22,9 +24,9 @@ function Articles() {
               </figure>
               <div className="inner-detail">
                 <figcaption>By {author}</figcaption>
-                <a className="article-title" href="#">
+                <Link className="article-title" to={`/blog/${id}`}>
                   <h2>{title}</h2>
-                </a>
+                </Link>
                 <p>{description}</p>
               </div>
             </div>
