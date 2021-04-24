@@ -97,6 +97,11 @@ figcaption {
   opacity: 0.7;
   font-size: 1.2rem;
   line-height: 1;
+  color: currentColor;
+}
+.inner-detail h2:hover {
+  color: var(--clr-bright-cyan);
+  cursor: pointer;
 }
 .inner-detail p {
   font-size: 0.9rem;

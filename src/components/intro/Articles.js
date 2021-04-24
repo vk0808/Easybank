@@ -11,7 +11,7 @@ function Articles() {
       <h1 className="head">Latest Articles</h1>
       <div className="posts feature-container">
         {article.map((post) => {
-          const { id, img, author, title, description } = post;
+          const { id, author, title, description } = post;
           return (
             <div key={id} className="post">
               <figure>
@@ -22,7 +22,9 @@ function Articles() {
               </figure>
               <div className="inner-detail">
                 <figcaption>By {author}</figcaption>
-                <h2>{title}</h2>
+                <a className="article-title" href="#">
+                  <h2>{title}</h2>
+                </a>
                 <p>{description}</p>
               </div>
             </div>
