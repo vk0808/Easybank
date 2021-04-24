@@ -1,15 +1,15 @@
 import React from "react";
-import { ReactComponent as BgIcon } from "../../images/bg-intro-desktop.svg";
-import Mockup from "../../images/image-mockups.png";
 
 import "./hero.css";
 
 function Hero() {
   return (
-    <div className="hero">
-      <div className="left">
-        <h1 className="title">Next generation digital banking</h1>
-        <p className="sub-title">
+    <div class="hero wrap">
+      <div class="left"></div>
+
+      <div class="right">
+        <h1 class="title">Next generation digital banking</h1>
+        <p class="sub-title">
           Take your financial life online. Your Easybank account will be a
           one-stop-shop for spending, saving, budgeting, investing, and much
           more.
@@ -17,10 +17,6 @@ function Hero() {
         <div className="btn-div">
           <button className="request-btn">request invite</button>
         </div>
-      </div>
-      <div className="right">
-        <BgIcon className="bg-icon" />
-        <img className="mock" src={Mockup} alt="" />
       </div>
     </div>
   );
