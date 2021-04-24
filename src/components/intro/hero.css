@@ -96,14 +96,14 @@ figcaption {
 }
 .inner-detail h2 {
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   opacity: 0.7;
   font-size: 1.2rem;
   line-height: 1;
   color: var(--clr-dark-blue);
 }
 .inner-detail h2:hover {
-  color: var(--clr-bright-cyan);
+  color: var(--clr-lime-green);
   cursor: pointer;
 }
 .inner-detail p {

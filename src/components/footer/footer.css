@@ -24,7 +24,7 @@ footer {
   margin-right: 0.75rem;
 }
 .social-links svg path:hover {
-  fill: var(--clr-bright-cyan);
+  fill: var(--clr-lime-green);
 }
 .b {
   margin-top: 0.75rem;
@@ -38,7 +38,7 @@ footer {
   color: var(--clr-white);
 }
 .b p a:hover {
-  color: var(--clr-bright-cyan);
+  color: var(--clr-lime-green);
 }
 .footer-right {
   margin-top: 2rem;
