@@ -31,13 +31,13 @@ nav {
   letter-spacing: var(--spacing);
   display: block;
   padding: 0.5rem 2.5rem 0;
-  transition: var(--transition);
 }
 .links-container .links a {
   opacity: 0.6;
 }
 .links-container .links a:hover {
   opacity: 1;
+  font-weight: 600;
 }
 .links-container {
   height: 0;
