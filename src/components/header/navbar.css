@@ -43,6 +43,10 @@ nav {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
+  width: 100vw;
+  position: absolute;
+  z-index: 999;
+  background: var(--clr-white);
 }
 .show-container {
   height: 10rem;
