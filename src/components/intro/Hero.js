@@ -14,7 +14,7 @@ function Hero() {
           one-stop-shop for spending, saving, budgeting, investing, and much
           more.
         </p>
-        <div>
+        <div className="btn-div">
           <button className="request-btn">request invite</button>
         </div>
       </div>

@@ -40,6 +40,9 @@
   position: absolute;
   z-index: 99;
 }
+.left .btn-div {
+  margin-top: 1rem;
+}
 /* Feature Section */
 .feature {
   padding: 2rem 6rem;
