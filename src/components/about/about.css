@@ -1,0 +1,49 @@
+.about-container {
+  padding: 5rem 4rem;
+}
+.box {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.head::after {
+  content: "";
+  display: block;
+  padding-top: 0.5rem;
+  border-bottom: var(--border) solid var(--clr-lime-green);
+  width: 30%;
+  position: relative;
+  left: 35%;
+}
+.descriptions {
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.points li {
+  background: var(--clr-grey-9);
+  padding: 1rem;
+}
+.third li {
+  margin-bottom: 1rem;
+}
+.stats {
+  font-weight: 600;
+  font-size: 2rem;
+  color: mediumaquamarine;
+  vertical-align: sub;
+}
+.location {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 1rem;
+  row-gap: 0.25rem;
+  color: var(--grayish-blue);
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
