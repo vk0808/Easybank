@@ -71,6 +71,7 @@
   .title {
     font-size: 3rem;
     margin-bottom: 1.5rem;
+    font-weight: 500;
   }
   .sub-title {
     padding: initial;
@@ -88,11 +89,12 @@
   margin-bottom: 1rem;
 }
 .head {
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 .sub-head {
   font-size: 1.2rem;
+  font-weight: 500;
 }
 .feature-container {
   display: grid;
@@ -103,7 +105,7 @@
 }
 .feature-list h1 {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
@@ -133,7 +135,7 @@ figcaption {
 }
 .inner-detail h2 {
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.2rem;
   line-height: 1;
   color: var(--clr-black);
