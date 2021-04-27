@@ -40,3 +40,8 @@
 .location {
   margin-top: 2rem;
 }
+@media screen and (max-width: 600px) {
+  .about-container {
+    padding: 5rem 2rem;
+  }
+}
