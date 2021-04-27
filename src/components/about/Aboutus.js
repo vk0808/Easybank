@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactTooltip from "react-tooltip";
+
+import MapChart from "./Maps";
 import "./about.css";
 
 function Aboutus() {
+  const [content, setContent] = useState("");
+
   return (
     <div className="about-container">
       <div className="first box">
@@ -54,7 +59,12 @@ function Aboutus() {
           </ul>
         </p>
         <h2 className="sub-head">Locations</h2>
-        <ul className="location">
+        <div className="location">
+          <MapChart setTooltipContent={setContent} />
+          <ReactTooltip>{content}</ReactTooltip>
+        </div>
+        {/* <ul className="location">
+          <li>India</li>
           <li>Japan</li>
           <li>Singapore</li>
           <li>South</li> Korea
@@ -63,12 +73,11 @@ function Aboutus() {
           <li>China</li>
           <li>Indonesia</li>
           <li>Malaysia</li>
-          <li>India</li>
           <li>Philippines</li>
           <li>Thailand</li>
           <li>Myanmar</li>
           <li>Vietnam</li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
