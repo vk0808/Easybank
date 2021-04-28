@@ -94,6 +94,16 @@ function ContactForm() {
           </div>
         </div>
       </div>
+      <div className="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13078.071878265395!2d77.74112867346791!3d12.96327410342785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f35d0dfc83%3A0x30cfa512d80115f9!2sWhitefield%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1619612453801!5m2!1sen!2sin"
+          style={{ border: 0 }}
+          allowfullscreen=""
+          loading="lazy"
+          aria-hidden="false"
+          tabIndex="0"
+        />
+      </div>
     </section>
   );
 }
