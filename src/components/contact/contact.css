@@ -1,0 +1,89 @@
+.contact {
+  padding: 4rem;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  color: var(--clr-dark-blue);
+  gap: 4rem;
+}
+.contact-left h2 {
+  margin-bottom: 0.5rem;
+}
+.contact-right {
+  margin-top: 1.5rem;
+}
+.contact-right h3 {
+  margin-bottom: 1rem;
+}
+.contact-right div {
+  margin-bottom: 1rem;
+}
+.contact-right h4 {
+  margin-bottom: 0.25rem;
+}
+.contact-container path[fill="#FFF"] {
+  fill: var(--clr-dark-blue);
+}
+form input {
+  height: 30px;
+}
+form input#subject {
+  width: -webkit-fill-available;
+}
+textarea {
+  width: -webkit-fill-available;
+  resize: vertical;
+  padding-top: 0.5rem;
+  font-family: "Public Sans";
+}
+form input,
+textarea {
+  margin: 0.25rem 0.5rem 0.5rem 0;
+  border: transparent;
+  background: var(--clr-grey-8);
+  padding-left: 1rem;
+  border-radius: 0.3rem;
+}
+.submit-btn {
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: var(--radius);
+  background: var(--clr-bright-cyan);
+}
+.submit-btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.card:hover svg[stroke="currentColor"] {
+  fill: var(--clr-lime-green);
+}
+.contact-map {
+  text-align: center;
+  margin-top: 3rem;
+}
+iframe {
+  width: -webkit-fill-available;
+  height: 450px;
+}
+@media screen and (max-width: 750px) {
+  .contact {
+    padding: 3rem 2rem;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-left {
+    text-align: center;
+  }
+}
