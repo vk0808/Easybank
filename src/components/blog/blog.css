@@ -1,0 +1,16 @@
+.blog .head {
+  display: none;
+}
+@media screen and (min-width: 701px) {
+  .blog .feature-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog .posts .post {
+    display: flex;
+  }
+  .blog .posts .post img {
+    width: 250px;
+    object-fit: cover;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
