@@ -46,7 +46,9 @@ function Articles({ query }) {
           })
         ) : (
           <div className="no-post">
-            <p>Can't find the post with {query}</p>
+            <p>
+              Can't find the post with <p>{query}</p>
+            </p>
           </div>
         )}
       </div>
