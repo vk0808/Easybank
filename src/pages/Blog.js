@@ -1,9 +1,11 @@
 import React from "react";
 
+import Posts from "../components/blog/Posts";
+
 function Blog() {
   return (
     <div>
-      <p>blog</p>
+      <Posts />
     </div>
   );
 }
