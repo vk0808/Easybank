@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-import Articles from "../intro/Articles";
+import Articles from "./Articles";
+import Search from "./Search";
 import "./blog.css";
 
 function Posts() {
+  const [query, setQuery] = useState("");
+
   return (
     <div className="blog">
-      <Articles />
+      <Search query={query} setQuery={setQuery} />
+      <Articles query={query} />
     </div>
   );
 }
