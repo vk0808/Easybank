@@ -1,11 +1,12 @@
 import React from "react";
 
+import Articles from "../intro/Articles";
 import "./blog.css";
 
 function Posts() {
   return (
-    <div>
-      <p>posts</p>
+    <div className="blog">
+      <Articles />
     </div>
   );
 }
