@@ -2,9 +2,21 @@
   display: flex;
   gap: 2rem;
   padding: 4rem;
+  background: var(--clr-grey-9);
 }
 .blog .feature {
   padding: 0;
+}
+#header-search {
+  background: none;
+  border-bottom: 2px solid var(--clr-bright-cyan);
+  border-radius: 0px;
+}
+#header-search:focus-visible {
+  outline: 0;
+}
+.no-post {
+  height: 50vh;
 }
 @media screen and (min-width: 701px) {
   .blog .feature-container {
