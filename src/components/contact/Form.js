@@ -13,12 +13,16 @@ import { ReactComponent as Instagram } from "../../images/icon-instagram.svg";
 import "./contact.css";
 
 function ContactForm() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section className="contact">
       <div className="contact-container">
         <div className="contact-left">
           <h2>Interested in Discussing?</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="form-group">
               <input
                 type="text"
