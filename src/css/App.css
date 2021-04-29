@@ -28,7 +28,7 @@
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-8: hsl(210, 31%, 84%);
   --clr-grey-9: hsl(212, 33%, 93%);
   --clr-grey-10: hsl(210, 36%, 96%);
 <<<<<<< HEAD
@@ -45,7 +45,7 @@
   --radius: 1.5rem;
   --border: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 *,
