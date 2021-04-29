@@ -1,4 +1,5 @@
 .blog {
+  min-height: 85vh;
   display: flex;
   gap: 2rem;
   padding: 4rem;
