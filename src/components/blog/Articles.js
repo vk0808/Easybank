@@ -15,7 +15,8 @@ function Articles({ query }) {
 
     return posts.filter((post) => {
       const postName = post.title.toLowerCase();
-      return postName.includes(query);
+      const postAuthor = post.author.toLowerCase();
+      return postName.includes(query) || postAuthor.includes(query);
     });
   };
   const filteredPosts = filterPosts(posts, query);
