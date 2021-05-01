@@ -32,7 +32,7 @@ function App() {
         <Route path="/career">
           <Career />
         </Route>
-        <Route path="/blog/:id" children={<SingleBlog />}></Route>
+        <Route path="/article/:id" children={<SingleBlog />}></Route>
         <Route path="*">
           <Error />
         </Route>
