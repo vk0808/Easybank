@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LinesEllipsis from "react-lines-ellipsis";
 
 import { posts } from "./blogPost";
 import img_1 from "../../images/image-currency.jpg";
@@ -40,7 +41,16 @@ function Articles({ query }) {
                     <h2>{title}</h2>
                   </Link>
                   <figcaption>By {author}</figcaption>
-                  <p>{description}</p>
+                  <p>
+                    <LinesEllipsis
+                      style={{ display: "inline" }}
+                      text={description}
+                      maxLine="1"
+                      ellipsis="..."
+                      trimRight
+                      basedOn="letters"
+                    />
+                  </p>
                 </div>
               </div>
             );
