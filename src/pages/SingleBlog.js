@@ -4,9 +4,33 @@ import { useParams, Link } from "react-router-dom";
 
 import { posts } from "../components/blog/blogPost";
 
+function PostArticle({ id, img, title, author }) {
+  return (
+    <>
+      <div className="post">
+        <figure>
+          <img src={`../images/${img}`} alt={author} />
+        </figure>
+        <div className="inner-detail">
+          <Link className="article-title" to={`/article/${id}`}>
+            <h3>{title}</h3>
+          </Link>
+          <figcaption>By {author}</figcaption>
+        </div>
+      </div>
+    </>
+  );
+}
+
 function SingleBlog() {
   const { id } = useParams();
   const specificPost = posts.filter((post) => JSON.stringify(post.id) === id);
+  const nextPost = posts.filter(
+    (post) => JSON.stringify(post.id) === JSON.stringify(parseInt(id) + 1)
+  );
+  const previousPost = posts.filter(
+    (post) => JSON.stringify(post.id) === JSON.stringify(parseInt(id) - 1)
+  );
 
   return (
     <>
@@ -38,6 +62,35 @@ function SingleBlog() {
           </div>
         );
       })}
+      <div className="other-post">
+        <div className="previous-post">
+          {previousPost.map((item) => {
+            const { id, img, title, author } = item;
+            return (
+              <PostArticle
+                key={id}
+                id={id}
+                img={img}
+                title={title}
+                author={author}
+              />
+            );
+          })}
+        </div>
+        {nextPost.map((item) => {
+          const { id, img, title, author } = item;
+          return (
+            <PostArticle
+              key={id}
+              id={id}
+              img={img}
+              title={title}
+              author={author}
+            />
+          );
+        })}
+        <div className="next-post"></div>
+      </div>
     </>
   );
 }
