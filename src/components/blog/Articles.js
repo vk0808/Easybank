@@ -27,7 +27,7 @@ function Articles({ query }) {
             return (
               <div key={id} className="post">
                 <figure>
-                  <img src={`./images/${img}`} alt={author} />
+                  <img src={`../images/${img}`} alt={author} />
                 </figure>
                 <div className="inner-detail">
                   <Link className="article-title" to={`/article/${id}`}>
