@@ -1,5 +1,5 @@
 import React from "react";
-import { BiUserCircle } from "react-icons/bi";
+import { BiUserCircle, BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { useParams, Link } from "react-router-dom";
 
 import { posts } from "../components/blog/blogPost";
@@ -13,7 +13,7 @@ function PostArticle({ id, img, title, author }) {
         </figure>
         <div className="inner-detail">
           <Link className="article-title" to={`/article/${id}`}>
-            <h3>{title}</h3>
+            <h2>{title}</h2>
           </Link>
           <figcaption>By {author}</figcaption>
         </div>
@@ -62,34 +62,48 @@ function SingleBlog() {
           </div>
         );
       })}
-      <div className="other-post">
-        <div className="previous-post">
-          {previousPost.map((item) => {
-            const { id, img, title, author } = item;
-            return (
-              <PostArticle
-                key={id}
-                id={id}
-                img={img}
-                title={title}
-                author={author}
-              />
-            );
-          })}
+      <div className="other">
+        <h3 className="header">Read other articles</h3>
+        <div className="other-post">
+          <div className="previous-post">
+            {previousPost.length !== 0 && (
+              <p className="prev-post-head text">
+                <BiChevronLeft /> Previous Post
+              </p>
+            )}
+            {previousPost.map((item) => {
+              const { id, img, title, author } = item;
+              return (
+                <PostArticle
+                  key={id}
+                  id={id}
+                  img={img}
+                  title={title}
+                  author={author}
+                />
+              );
+            })}
+          </div>
+          <div className="next-post">
+            {nextPost.length !== 0 && (
+              <p className="next-post-head text">
+                Next Post <BiChevronRight />
+              </p>
+            )}
+            {nextPost.map((item) => {
+              const { id, img, title, author } = item;
+              return (
+                <PostArticle
+                  key={id}
+                  id={id}
+                  img={img}
+                  title={title}
+                  author={author}
+                />
+              );
+            })}
+          </div>
         </div>
-        {nextPost.map((item) => {
-          const { id, img, title, author } = item;
-          return (
-            <PostArticle
-              key={id}
-              id={id}
-              img={img}
-              title={title}
-              author={author}
-            />
-          );
-        })}
-        <div className="next-post"></div>
       </div>
     </>
   );
