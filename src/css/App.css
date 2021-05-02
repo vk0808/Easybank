@@ -95,3 +95,46 @@ h4 {
 p {
   color: var(--grayish-blue);
 }
+.specific-post {
+  padding: 5rem 4rem;
+}
+.specific-post img {
+  border-radius: 0.25rem;
+  height: fit-content;
+  object-fit: cover;
+}
+.specific-post .title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.author-details {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.author-details svg {
+  font-size: 1.5rem;
+  vertical-align: top;
+  margin-left: 0.5rem;
+  color: var(--clr-bright-cyan);
+}
+.author-details .date {
+  padding-left: 0.5rem;
+  border-left: 2px solid var(--clr-grey-7);
+}
+.specific-post figcaption {
+  padding-left: 0.5rem;
+  color: var(--clr-grey-7);
+  padding-top: 0.25rem;
+  font-weight: 300;
+  border-left: 2px solid var(--clr-grey-7);
+}
+@media screen and (max-width: 700px) {
+  .specific-post {
+    padding: 4rem 1rem;
+  }
+  .specific-post img {
+    height: auto;
+    object-fit: contain;
+  }
+}
