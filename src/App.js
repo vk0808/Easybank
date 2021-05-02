@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 
 import Navbar from "./components/header/Navbar";
 import Footer from "./components/footer/Footer";
@@ -15,6 +16,7 @@ import Error from "./pages/Error";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route exact path="/">
