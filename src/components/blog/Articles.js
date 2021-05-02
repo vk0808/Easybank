@@ -38,7 +38,7 @@ function Articles({ query }) {
                     <LinesEllipsis
                       style={{ display: "inline" }}
                       text={description}
-                      maxLine="1"
+                      maxLine="2"
                       ellipsis="..."
                       trimRight
                       basedOn="letters"
