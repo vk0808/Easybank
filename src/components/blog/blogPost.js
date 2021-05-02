@@ -2,6 +2,7 @@ export const posts = [
   {
     id: 1,
     img: "image-currency.jpg",
+    photo: "Chris",
     author: "Claire Robinson",
     date: "3 March 2021",
     title: "Receive money in any currency with no fees",
@@ -16,6 +17,7 @@ export const posts = [
   {
     id: 2,
     img: "image-restaurant.jpg",
+    photo: "James",
     author: "Wilson Hutton",
     date: "4 March 2021",
     title: "Treat yourself without worrying about money",
@@ -31,6 +33,7 @@ export const posts = [
   {
     id: 3,
     img: "image-plane.jpg",
+    photo: "John",
     author: "Wilson Hutton",
     date: "5 March 2021",
     title: "Take your Easybank card wherever you go",
@@ -46,6 +49,7 @@ export const posts = [
   {
     id: 4,
     img: "image-confetti.jpg",
+    photo: "Alex",
     author: "Claire Robinson",
     date: "6 March 2021",
     title: "Our invite-only Beta accounts are now live!",
