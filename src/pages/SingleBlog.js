@@ -51,15 +51,7 @@ function SingleBlog() {
               <img src={`../images/${img}`} alt="" />
               <figcaption>Photo by {photo}</figcaption>
             </figure>
-            <p className="description">
-              {description.split("\n\n").map((paragraph) => (
-                <p className="para">
-                  {paragraph
-                    .split("\n")
-                    .reduce((total, line) => [total, <br />, line])}
-                </p>
-              ))}
-            </p>
+            <p className="description">{parse(description)}</p>
           </div>
         );
       })}
