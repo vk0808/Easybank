@@ -2,21 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LinesEllipsis from "react-lines-ellipsis";
 
-import { posts } from "./blogPost";
+import { article } from "../intro/article";
 
 function Articles({ query }) {
-  const filterPosts = (posts, query) => {
+  const filterPosts = (article, query) => {
     if (!query) {
-      return posts;
+      return article;
     }
 
-    return posts.filter((post) => {
+    return article.filter((post) => {
       const postName = post.title.toLowerCase();
       const postAuthor = post.author.toLowerCase();
       return postName.includes(query) || postAuthor.includes(query);
     });
   };
-  const filteredPosts = filterPosts(posts, query);
+  const filteredPosts = filterPosts(article, query);
 
   return (
     <section className="feature article">
@@ -27,7 +27,7 @@ function Articles({ query }) {
             return (
               <div key={id} className="post">
                 <figure>
-                  <img src={`../images/${img}`} alt={author} />
+                  <img src={`.${img}`} alt={author} />
                 </figure>
                 <div className="inner-detail">
                   <Link className="article-title" to={`/article/${id}`}>
