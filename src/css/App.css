@@ -129,12 +129,70 @@ p {
   font-weight: 300;
   border-left: 2px solid var(--clr-grey-7);
 }
+.description p {
+  margin: 1.5rem 0 0.5rem;
+}
+.description .para p:first-child {
+  margin-top: 3rem;
+}
+.description .para-header {
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.description .para-header::after {
+  display: block;
+  content: "";
+  width: 10vw;
+  border-bottom: 10px solid var(--clr-bright-cyan);
+}
+.para-fact {
+  padding-left: 4rem;
+  background: var(--clr-grey-8);
+}
+.para-statement {
+  background: var(--clr-grey-8);
+  border-left: 5px solid var(--clr-bright-cyan);
+}
+.para-quote {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: -3rem !important;
+}
+.para-quote:before {
+  content: open-quote;
+  font-size: 6rem;
+  margin-top: -3rem;
+  color: var(--clr-grey-8);
+}
+.para-fact,
+.para-statement,
+.para-quote {
+  font-size: 1.2rem;
+  padding: 2rem;
+  color: var(--clr-dark-blue);
+  letter-spacing: 1px;
+}
+.para-group {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+.para-group .para-left,
+.para-right {
+  padding: 2rem 1.5rem;
+  color: var(--clr-white);
+}
+.para-left {
+  background: var(--clr-grey-1);
+}
+.para-right {
+  background: var(--clr-primary-2);
+}
 .other {
   padding: 1rem 4rem 4rem;
 }
 .other .header {
   margin-bottom: 1rem;
-  font-weight: 500;
 }
 .other-post {
   display: grid;
