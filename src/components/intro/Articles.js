@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LinesEllipsis from "react-lines-ellipsis";
 
 import { article } from "./article";
 
@@ -20,7 +21,16 @@ function Articles() {
                 <Link className="article-title" to={`/article/${id}`}>
                   <h2>{title}</h2>
                 </Link>
-                <p>{description}</p>
+                <p>
+                  <LinesEllipsis
+                    style={{ display: "inline" }}
+                    text={description}
+                    maxLine="1"
+                    ellipsis="..."
+                    trimRight
+                    basedOn="letters"
+                  />
+                </p>
               </div>
             </div>
           );
