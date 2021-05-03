@@ -220,6 +220,13 @@ p {
     height: auto;
     object-fit: contain;
   }
+  .para-quote {
+    padding-left: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+  .para-group {
+    flex-direction: column;
+  }
   .other {
     padding: 1rem 0.5rem 3rem;
   }
@@ -229,5 +236,11 @@ p {
   .other-post {
     grid-template-columns: 1fr;
     text-align: -webkit-center;
+  }
+  .text {
+    padding: 0 2rem;
+  }
+  .prev-post-head {
+    text-align: left;
   }
 }
