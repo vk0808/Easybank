@@ -17,7 +17,7 @@ function Articles() {
               </figure>
               <div className="inner-detail">
                 <figcaption>By {author}</figcaption>
-                <Link className="article-title" to={`/blog/${id}`}>
+                <Link className="article-title" to={`/article/${id}`}>
                   <h2>{title}</h2>
                 </Link>
                 <p>{description}</p>
