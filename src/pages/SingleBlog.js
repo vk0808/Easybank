@@ -1,6 +1,7 @@
 import React from "react";
 import { BiUserCircle, BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { useParams, Link } from "react-router-dom";
+import parse from "html-react-parser";
 
 import { posts } from "../components/blog/blogPost";
 
