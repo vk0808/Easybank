@@ -22,32 +22,35 @@ function Articles({ query }) {
     <section className="feature article">
       <div className="posts feature-container">
         {filteredPosts.length !== 0 ? (
-          filteredPosts.map((post) => {
-            const { id, img, author, title, description } = post;
-            return (
-              <div key={id} className="post">
-                <figure>
-                  <img src={`.${img}`} alt={author} />
-                </figure>
-                <div className="inner-detail">
-                  <Link className="article-title" to={`/article/${id}`}>
-                    <h2>{title}</h2>
-                  </Link>
-                  <figcaption>By {author}</figcaption>
-                  <p>
-                    <LinesEllipsis
-                      style={{ display: "inline" }}
-                      text={description}
-                      maxLine="2"
-                      ellipsis="..."
-                      trimRight
-                      basedOn="letters"
-                    />
-                  </p>
+          filteredPosts
+            .slice(0)
+            .reverse()
+            .map((post) => {
+              const { id, img, author, title, description } = post;
+              return (
+                <div key={id} className="post">
+                  <figure>
+                    <img src={`.${img}`} alt={author} />
+                  </figure>
+                  <div className="inner-detail">
+                    <Link className="article-title" to={`/article/${id}`}>
+                      <h2>{title}</h2>
+                    </Link>
+                    <figcaption>By {author}</figcaption>
+                    <p>
+                      <LinesEllipsis
+                        style={{ display: "inline" }}
+                        text={description}
+                        maxLine="2"
+                        ellipsis="..."
+                        trimRight
+                        basedOn="letters"
+                      />
+                    </p>
+                  </div>
                 </div>
-              </div>
-            );
-          })
+              );
+            })
         ) : (
           <div className="no-post">
             <p>
