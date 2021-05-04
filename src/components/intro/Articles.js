@@ -12,6 +12,7 @@ function Articles() {
         {article
           .slice(0)
           .reverse()
+          .slice(0, 4)
           .map((post) => {
             const { id, img, author, title, description } = post;
             return (
