@@ -60,6 +60,7 @@
   display: flex;
   gap: 1rem;
   margin-bottom: -3rem !important;
+  font-style: italic;
 }
 .para-quote:before {
   content: open-quote;
