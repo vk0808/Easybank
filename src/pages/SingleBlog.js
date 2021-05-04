@@ -3,7 +3,8 @@ import { BiUserCircle, BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { useParams, Link } from "react-router-dom";
 import parse from "html-react-parser";
 
-import { posts } from "../components/blog/blogPost";
+import { posts } from "../components/singleBlog/blogPost";
+import "../components/singleBlog/singleBlog.css";
 
 function PostArticle({ id, img, title, author }) {
   return (
