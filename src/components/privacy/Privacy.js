@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./privacy.css";
+
 function Privacy() {
   return (
-    <div>
+    <div className="privacy">
       <h1>Privacy Policy for Easybank</h1>
 
       <p>
