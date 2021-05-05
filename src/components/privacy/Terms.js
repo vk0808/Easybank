@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+
+import "./privacy.css";
 
 function Terms() {
   return (
-    <div>
-      <h2>
+    <div className="privacy">
+      <h1>
         <strong>Terms and Conditions</strong>
-      </h2>
+      </h1>
 
       <p>Welcome to Easybank website!</p>
 
@@ -37,9 +39,9 @@ function Terms() {
         referring to same.
       </p>
 
-      <h3>
+      <h2>
         <strong>Cookies</strong>
-      </h3>
+      </h2>
 
       <p>
         We employ the use of cookies. By accessing Easybank website, you agreed
@@ -54,9 +56,9 @@ function Terms() {
         cookies.
       </p>
 
-      <h3>
+      <h2>
         <strong>License</strong>
-      </h3>
+      </h2>
 
       <p>
         Unless otherwise stated, Easybank and/or its licensors own the
@@ -134,9 +136,9 @@ function Terms() {
         Comments in any and all forms, formats or media.
       </p>
 
-      <h3>
+      <h2>
         <strong>Hyperlinking to our Content</strong>
-      </h3>
+      </h2>
 
       <p>
         The following organizations may link to our Website without prior
@@ -224,9 +226,9 @@ function Terms() {
         absent a trademark license agreement.
       </p>
 
-      <h3>
+      <h2>
         <strong>iFrames</strong>
-      </h3>
+      </h2>
 
       <p>
         Without prior approval and written permission, you may not create frames
@@ -234,9 +236,9 @@ function Terms() {
         appearance of our Website.
       </p>
 
-      <h3>
+      <h2>
         <strong>Content Liability</strong>
-      </h3>
+      </h2>
 
       <p>
         We shall not be hold responsible for any content that appears on your
@@ -247,15 +249,15 @@ function Terms() {
         any third party rights.
       </p>
 
-      <h3>
+      <h2>
         <strong>Your Privacy</strong>
-      </h3>
+      </h2>
 
       <p>Please read Privacy Policy</p>
 
-      <h3>
+      <h2>
         <strong>Reservation of Rights</strong>
-      </h3>
+      </h2>
 
       <p>
         We reserve the right to request that you remove all links or any
@@ -266,9 +268,9 @@ function Terms() {
         these linking terms and conditions.
       </p>
 
-      <h3>
+      <h2>
         <strong>Removal of links from our website</strong>
-      </h3>
+      </h2>
 
       <p>
         If you find any link on our Website that is offensive for any reason,
@@ -284,9 +286,9 @@ function Terms() {
         is kept up to date.
       </p>
 
-      <h3>
+      <h2>
         <strong>Disclaimer</strong>
-      </h3>
+      </h2>
 
       <p>
         To the maximum extent permitted by applicable law, we exclude all
@@ -329,4 +331,4 @@ function Terms() {
   );
 }
 
-export default Terms
+export default Terms;
