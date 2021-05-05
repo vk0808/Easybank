@@ -47,6 +47,7 @@ nav {
   position: absolute;
   z-index: 999;
   background: var(--clr-white);
+  text-align: center;
 }
 .show-container {
   height: 10rem;
