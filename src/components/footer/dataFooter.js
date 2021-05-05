@@ -16,8 +16,8 @@ export const links = [
   },
   {
     id: 4,
-    url: "/",
-    text: "support",
+    url: "/terms",
+    text: "terms",
   },
   {
     id: 5,
@@ -26,7 +26,7 @@ export const links = [
   },
   {
     id: 6,
-    url: "/",
+    url: "/privacy_policy",
     text: "privacy policy",
   },
 ];
