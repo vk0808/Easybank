@@ -1,6 +1,7 @@
 .privacy {
   padding: 4rem;
   letter-spacing: 1px;
+  background: var(--clr-grey-9);
 }
 .privacy p,
 .privacy ul,
