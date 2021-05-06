@@ -33,7 +33,7 @@ nav {
   padding: 0.5rem 2.5rem 0;
 }
 .links-container .links a {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .links-container .links a:hover {
   opacity: 1;
