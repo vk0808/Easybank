@@ -5,7 +5,7 @@ import CareerIcon from "../../images/career-outline.svg";
 
 function Careers() {
   return (
-    <div>
+    <div className="career">
       <div className="career-intro">
         <div className="career-intro-left">
           <h2>Shape the next generation digital banking</h2>
