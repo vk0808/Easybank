@@ -1,11 +1,9 @@
 import React from "react";
 
+import Careers from "../components/careers/Careers";
+
 function Career() {
-  return (
-    <div>
-      <p>career</p>
-    </div>
-  );
+  return <Careers />;
 }
 
 export default Career;
