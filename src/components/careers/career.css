@@ -33,7 +33,11 @@
   margin-top: -7rem;
   gap: 1rem;
 }
+.benefits img {
+  transform: scale(0.75);
+}
 .benefits .inner {
+  margin-top: -2rem;
   padding: 0 1rem;
 }
 .benefits .inner p {
@@ -58,10 +62,7 @@
   .benefits {
     grid-template-columns: auto;
     grid-template-rows: repeat(6, 1fr);
-    margin-top: -20rem;
-  }
-  .benefits img {
-    transform: scale(0.75);
+    margin-top: -17rem;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1040px) {
