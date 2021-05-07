@@ -1,13 +1,8 @@
 import React from "react";
 
+import { benefits } from "./benefits";
 import "./career.css";
 import CareerIcon from "../../images/career-outline.svg";
-import Book from "../../images/book.svg";
-import Calendar from "../../images/calendar-outline.svg";
-import Fitness from "../../images/fitness.svg";
-import Health from "../../images/health-outline.svg";
-import Meal from "../../images/healthy-meal-outline.svg";
-import Scooter from "../../images/scooter.svg";
 
 function Careers() {
   return (
@@ -41,66 +36,17 @@ function Careers() {
         <h3 className="about-subhead">Perks and benefits</h3>
         <h2>Why join us?</h2>
         <div className="benefits">
-          <div className="benefit-group">
-            <img src={Book} alt="" />
-            <div className="inner">
-              <h3>Lorem</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
-                quas?
-              </p>
-            </div>
-          </div>
-          <div className="benefit-group">
-            <img src={Calendar} alt="" />
-            <div className="inner">
-              <h3>Lorem</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
-                quas?
-              </p>
-            </div>
-          </div>
-          <div className="benefit-group">
-            <img src={Fitness} alt="" />
-            <div className="inner">
-              <h3>Lorem</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
-                quas?
-              </p>
-            </div>
-          </div>
-          <div className="benefit-group">
-            <img src={Health} alt="" />
-            <div className="inner">
-              <h3>Lorem</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
-                quas?
-              </p>
-            </div>
-          </div>
-          <div className="benefit-group">
-            <img src={Meal} alt="" />
-            <div className="inner">
-              <h3>Lorem</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
-                quas?
-              </p>
-            </div>
-          </div>
-          <div className="benefit-group">
-            <img src={Scooter} alt="" />
-            <div className="inner">
-              <h3>Lorem</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
-                quas?
-              </p>
-            </div>
-          </div>
+          {benefits.map((perk) => {
+            const { id, img, content } = perk;
+            return (
+              <div key={id} className="benefit-group">
+                <img src={`./${img}`} alt="" />
+                <div className="inner">
+                  <p>{content}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
