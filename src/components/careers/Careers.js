@@ -16,7 +16,7 @@ function Careers() {
             digital banking and now is a pivotal point — join us in our journey
             to change the world over using banking.
           </p>
-          <button class="submit-btn">
+          <button className="submit-btn">
             <a href="#open-positions">Apply now</a>
           </button>
         </div>
