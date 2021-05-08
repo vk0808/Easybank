@@ -14,14 +14,6 @@ function Roles() {
   dep.unshift("All departments");
   const defaultDep = dep[0];
 
-  const filteredData = jobs.filter((job) => job.location === loc);
-  const filteredJobs =
-    filteredData.length === 0
-      ? jobs.filter((job) => job.department === depart)
-      : filteredData.filter((job) => job.department === depart);
-
-  console.log(loc, depart, filteredJobs, filteredData);
-
   return (
     <div id="open-positions" className="roles">
       <h3 className="about-subhead">Opportunities</h3>
@@ -40,7 +32,7 @@ function Roles() {
           </div>
           <div>
             <h4 className="about-subhead ihead">
-              Department ({` ${dep.length} `})
+              Department ({` ${dep.length - 1} `})
             </h4>
             <Dropdown
               options={dep}
@@ -55,28 +47,27 @@ function Roles() {
         <div className="job-role-right">
           <h4 className="about-subhead ihead">
             Available Roles (
-            {` ${
-              jobs
-                .filter((job) => job.location === loc)
-                .filter((job) => job.department === depart).length
-            } `}
+            {` 
+                ${
+                  jobs
+                    .filter((job) => job.location === loc)
+                    .filter((job) => job.department === depart).length
+                } `}
             )
           </h4>
           <div className="roles-container">
-            {(depart === dep[0]
-              ? loc === ctry[0]
-                ? jobs
-                : filteredData
-              : filteredJobs
-            ).map((job) => {
-              const { id, role, location } = job;
-              return (
-                <div key={id} className="job-group">
-                  <h3 className="role">{role}</h3>
-                  <p className="role-location">{location}</p>
-                </div>
-              );
-            })}
+            {jobs
+              .filter((job) => job.location === loc)
+              .filter((job) => job.department === depart)
+              .map((job) => {
+                const { id, role, location } = job;
+                return (
+                  <div key={id} className="job-group">
+                    <h3 className="role">{role}</h3>
+                    <p className="role-location">{location}</p>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </div>
