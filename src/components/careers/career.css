@@ -99,6 +99,17 @@
     margin-top: -16rem;
     transform: scale(0.75);
   }
+  .roles {
+    padding: 4rem 3rem;
+    text-align: center;
+  }
+  .job-role {
+    grid-template-columns: auto;
+  }
+  .job-role-left {
+    padding: 0 1rem;
+    border: none;
+  }
 }
 @media screen and (min-width: 700px) and (max-width: 1040px) {
   .benefits {
