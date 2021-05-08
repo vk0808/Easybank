@@ -20,8 +20,6 @@ function Roles() {
       ? jobs.filter((job) => job.department === depart)
       : filteredData.filter((job) => job.department === depart);
 
-  console.log(loc, depart, filteredJobs, filteredData);
-
   return (
     <div id="open-positions" className="roles">
       <h3 className="about-subhead">Opportunities</h3>
@@ -40,7 +38,7 @@ function Roles() {
           </div>
           <div>
             <h4 className="about-subhead ihead">
-              Department ({` ${dep.length} `})
+              Department ({` ${dep.length - 1} `})
             </h4>
             <Dropdown
               options={dep}
@@ -56,9 +54,11 @@ function Roles() {
           <h4 className="about-subhead ihead">
             Available Roles (
             {` ${
-              jobs
-                .filter((job) => job.location === loc)
-                .filter((job) => job.department === depart).length
+              depart === dep[0]
+                ? loc === ctry[0]
+                  ? jobs.length
+                  : filteredData.length
+                : filteredJobs.length
             } `}
             )
           </h4>
