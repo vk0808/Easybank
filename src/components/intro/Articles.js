@@ -18,7 +18,7 @@ function Articles() {
             return (
               <div key={id} className="post">
                 <figure>
-                  <img src={img} alt="" />
+                  <img src={`./images/blog/${img}`} alt="" />
                 </figure>
                 <div className="inner-detail">
                   <figcaption>By {author}</figcaption>

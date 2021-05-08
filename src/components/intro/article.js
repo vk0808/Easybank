@@ -1,7 +1,7 @@
 export const article = [
   {
     id: 1,
-    img: "./images/image-confetti.jpg",
+    img: "image-confetti.jpg",
     author: "Claire Robinson",
     title: "Our invite-only Beta accounts are now live!",
     description:
@@ -9,7 +9,7 @@ export const article = [
   },
   {
     id: 2,
-    img: "./images/image-plane.jpg",
+    img: "image-plane.jpg",
     author: "Wilson Hutton",
     title: "Take your Easybank card wherever you go",
     description:
@@ -17,7 +17,7 @@ export const article = [
   },
   {
     id: 3,
-    img: "./images/image-restaurant.jpg",
+    img: "image-restaurant.jpg",
     author: "Wilson Hutton",
     title: "Treat yourself without worrying about money",
     description:
@@ -25,7 +25,7 @@ export const article = [
   },
   {
     id: 4,
-    img: "./images/image-currency.jpg",
+    img: "image-currency.jpg",
     author: "Claire Robinson",
     title: "Receive money in any currency with no fees",
     description:
