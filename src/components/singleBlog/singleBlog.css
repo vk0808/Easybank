@@ -1,5 +1,15 @@
 .specific-post {
-  padding: 5rem 4rem;
+  padding: 4rem;
+}
+.breadcrumb {
+  margin-bottom: 2rem;
+}
+.breadcrumb .article-title {
+  color: var(--clr-dark-blue);
+  font-weight: 500;
+}
+.breadcrumb .article-title:hover {
+  color: var(--clr-lime-green);
 }
 .specific-post img {
   border-radius: 0.25rem;
