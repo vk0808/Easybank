@@ -54,8 +54,8 @@ function Roles() {
           <h4 className="about-subhead ihead">
             Available Roles (
             {` ${
-              depart === dep[0]
-                ? loc === ctry[0]
+              depart === dep[0] || depart === ""
+                ? loc === ctry[0] || loc === ""
                   ? jobs.length
                   : filteredData.length
                 : filteredJobs.length
@@ -63,8 +63,8 @@ function Roles() {
             )
           </h4>
           <div className="roles-container">
-            {(depart === dep[0]
-              ? loc === ctry[0]
+            {(depart === dep[0] || depart === ""
+              ? loc === ctry[0] || loc === ""
                 ? jobs
                 : filteredData
               : filteredJobs
