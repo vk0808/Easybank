@@ -49,7 +49,7 @@ function SingleBlog() {
               <p className="date">{date}</p>
             </div>
             <figure>
-              <img src={`../images/${img}`} alt="" />
+              <img src={`../images/blog/${img}`} alt="" />
               <figcaption>Photo by {photo}</figcaption>
             </figure>
             <p className="description">{parse(description)}</p>
