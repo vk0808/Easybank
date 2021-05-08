@@ -17,11 +17,12 @@
 }
 
 .perks {
-  padding: 5rem 4rem;
+  display: table-cell;
+  padding: 5rem 4rem 0;
   background: var(--clr-grey-9);
-  margin-bottom: -5rem;
 }
-.perks h3 {
+.perks .about-subhead,
+.roles .about-subhead {
   color: var(--clr-grey-5);
 }
 .benefits {
@@ -42,6 +43,41 @@
 }
 .benefits .inner p {
   font-size: 1.1rem;
+}
+.roles {
+  padding: 4rem;
+}
+.capital {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.job-role {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+  min-height: 400px;
+}
+.job-role-left {
+  padding-right: 3rem;
+  border-right: 1px solid var(--clr-grey-7);
+}
+.ihead {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+.role-location {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.role,
+.role-location {
+  text-transform: capitalize;
+}
+.roles-container {
+  height: 400px;
+  overflow-y: scroll;
 }
 @media screen and (max-width: 700px) {
   .career {
