@@ -17,8 +17,7 @@
 }
 
 .perks {
-  display: table-cell;
-  padding: 5rem 4rem 0;
+  padding: 5rem 4rem 4rem;
   background: var(--clr-grey-9);
 }
 .perks .about-subhead,
@@ -30,8 +29,8 @@
   place-content: space-around;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  transform: scale(0.75);
-  margin-top: -7rem;
+  transform: scale(0.85);
+  margin-top: -4rem;
   gap: 1rem;
 }
 .benefits img {
@@ -42,7 +41,7 @@
   padding: 0 1rem;
 }
 .benefits .inner p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 .roles {
   padding: 4rem;
@@ -93,17 +92,17 @@
   }
   .perks {
     padding: 6rem 2rem 1rem;
-    margin-bottom: -10rem;
   }
   .benefits {
     grid-template-columns: auto;
     grid-template-rows: repeat(6, 1fr);
-    margin-top: -17rem;
+    margin-top: -16rem;
+    transform: scale(0.75);
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1040px) {
   .benefits {
     grid-template-columns: repeat(2, 1fr);
-    margin-top: -10rem;
+    margin-top: -6rem;
   }
 }
