@@ -34,12 +34,25 @@ function SingleBlog() {
     (post) => JSON.stringify(post.id) === JSON.stringify(parseInt(id) - 1)
   );
 
+  console.log(specificPost);
   return (
     <>
       {specificPost.map((post) => {
         const { id, img, photo, title, description, author, date } = post;
         return (
           <div className="specific-post" key={id}>
+            <div className="breadcrumb">
+              <p>
+                <Link className="article-title" to="/">
+                  Home
+                </Link>
+                <span> / </span>
+                <Link className="article-title" to="/blog">
+                  Blog
+                </Link>
+                <span> / {title}</span>
+              </p>
+            </div>
             <h1 className="title">{title}</h1>
             <div className="author-details">
               <p>
