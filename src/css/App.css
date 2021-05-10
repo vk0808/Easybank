@@ -95,3 +95,9 @@ h4 {
 p {
   color: var(--grayish-blue);
 }
+/* Not found page */
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
