@@ -2,9 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 
-import Navbar from "./components/header/Navbar";
-import Footer from "./components/footer/Footer";
-
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -19,7 +16,6 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <Navbar />
       <Switch>
         <Route exact path="/">
           <Home />
@@ -47,7 +43,6 @@ function App() {
           <Error />
         </Route>
       </Switch>
-      <Footer />
     </Router>
   );
 }
