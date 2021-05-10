@@ -7,8 +7,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Career from "./pages/Career";
-import Privacy from "./components/privacy/Privacy";
-import Terms from "./components/privacy/Terms";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsCondition from "./pages/TermsCondition";
 import SingleBlog from "./pages/SingleBlog";
 import Error from "./pages/Error";
 
@@ -33,10 +33,10 @@ function App() {
           <Career />
         </Route>
         <Route path="/terms">
-          <Terms />
+          <TermsCondition />
         </Route>
         <Route path="/privacy_policy">
-          <Privacy />
+          <PrivacyPolicy />
         </Route>
         <Route path="/article/:id" children={<SingleBlog />}></Route>
         <Route path="*">
