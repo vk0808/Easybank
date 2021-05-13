@@ -8,10 +8,17 @@ function Posts() {
   const [query, setQuery] = useState("");
 
   return (
-    <div className="blog">
-      <Search query={query} setQuery={setQuery} />
-      <Articles query={query} />
-    </div>
+    <>
+      <div class="blog-intro">
+        <div className="blog-left">
+          <h1>Know everything there is to banking</h1>
+        </div>
+      </div>
+      <div className="blog">
+        <Search query={query} setQuery={setQuery} />
+        <Articles query={query} />
+      </div>
+    </>
   );
 }
 
