@@ -1,6 +1,6 @@
 .contact-intro {
-  background: url("../../images/contact-us.svg") no-repeat center center;
-  background-size: contain;
+  background: url("../../images/contact-us.svg") no-repeat #c1d3fe center center;
+  background-size: 50vw;
   min-height: 35vw;
   position: relative;
   margin-bottom: -10rem;
@@ -101,9 +101,16 @@ iframe {
   width: -webkit-fill-available;
   height: 450px;
 }
+@media screen and (min-width: 1200px) {
+  .contact-intro {
+    margin-bottom: -20rem;
+    top: -10vw;
+  }
+}
 @media screen and (max-width: 750px) {
   .contact-intro {
     min-height: 50vw;
+    background-size: 80vw;
     top: 0;
     margin-bottom: -3rem;
   }
