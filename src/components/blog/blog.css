@@ -12,6 +12,22 @@
 .blog .feature {
   padding: 0;
 }
+.blog-intro {
+  display: flex;
+  align-items: center;
+  background: url("../../images/blog-post.svg") no-repeat var(--clr-green-light)
+    60vw;
+  background-size: 25vw;
+  min-height: 20vw;
+  top: -10vw;
+  padding: 4rem;
+}
+.blog-left {
+  width: 40vw;
+}
+.blog-left h1 {
+  font-size: 3rem;
+}
 #header-search {
   width: 50vw;
   background: none;
@@ -27,6 +43,12 @@
   overflow: auto;
 }
 @media screen and (max-width: 700px) {
+  .blog-intro {
+    padding: 4rem 2rem;
+  }
+  .blog-left h1 {
+    font-size: 1.2rem;
+  }
   .blog {
     padding: 2rem 0;
   }
