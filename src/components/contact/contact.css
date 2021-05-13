@@ -1,10 +1,23 @@
+.contact-intro {
+  background: url("../../images/contact-us.svg") no-repeat center center;
+  background-size: contain;
+  min-height: 35vw;
+  position: relative;
+  margin-bottom: -10rem;
+  top: -5vw;
+  z-index: -2;
+}
 .contact {
   padding: 4rem;
 }
 .contact-container {
+  background: var(--clr-white);
+  padding: 3rem;
+  box-shadow: 10px 7px 13px darkgrey;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   color: var(--clr-dark-blue);
+  grid-gap: 4rem;
   gap: 4rem;
 }
 .contact-left h2 {
@@ -40,10 +53,16 @@ textarea {
 form input,
 textarea {
   margin: 0.25rem 0.5rem 0.5rem 0;
-  border: transparent;
-  background: var(--clr-grey-8);
+  border: 0;
+  border-bottom: 3px solid var(--clr-dark-blue);
+  background: transparent;
   padding-left: 1rem;
-  border-radius: 0.3rem;
+  border-radius: 0;
+}
+input:focus-visible,
+textarea:focus-visible {
+  background-color: var(--clr-white);
+  border: 0px;
 }
 .submit-btn {
   font-weight: 400;
@@ -53,7 +72,10 @@ textarea {
   border: none;
   padding: 0.8rem 2rem;
   border-radius: var(--radius);
-  background: var(--clr-bright-cyan);
+  background: var(--clr-dark-blue);
+}
+.form-group .submit-btn {
+  margin-top: 3rem;
 }
 .submit-btn:hover {
   opacity: 0.6;
@@ -67,6 +89,10 @@ textarea {
 .card:hover svg[stroke="currentColor"] {
   fill: var(--clr-lime-green);
 }
+.card p {
+  color: var(--clr-grey-3);
+  font-weight: 400;
+}
 .contact-map {
   text-align: center;
   margin-top: 3rem;
@@ -76,6 +102,11 @@ iframe {
   height: 450px;
 }
 @media screen and (max-width: 750px) {
+  .contact-intro {
+    min-height: 50vw;
+    top: 0;
+    margin-bottom: -3rem;
+  }
   .contact {
     padding: 3rem 2rem;
   }
