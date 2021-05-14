@@ -12,6 +12,7 @@
     "react-dropdown": "^1.9.2",
     "react-icons": "^4.2.0",
     "react-lines-ellipsis": "^0.14.1",
+    "react-reading-progress": "^0.3.0",
     "react-responsive": "^8.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
