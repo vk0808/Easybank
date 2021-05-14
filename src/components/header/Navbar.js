@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import ReadingProgress from "react-reading-progress";
 
 import { links } from "./links";
 import { ReactComponent as Logo } from "../../images/logo.svg";
@@ -22,6 +23,7 @@ const Navbar = () => {
 
   return (
     <>
+      <ReadingProgress targetEl="#target-el" />
       <nav>
         <div className="nav-center">
           <div className="nav-header">

@@ -36,7 +36,7 @@ function Single() {
 
   console.log(specificPost);
   return (
-    <>
+    <article id="target-el">
       {specificPost.map((post) => {
         const { id, img, photo, title, description, author, date } = post;
         return (
@@ -112,7 +112,7 @@ function Single() {
           </div>
         </div>
       </div>
-    </>
+    </article>
   );
 }
 
