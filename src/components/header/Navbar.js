@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ReadingProgress from "react-reading-progress";
 
 import { links } from "./links";
@@ -11,6 +11,7 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
+  const { id } = useParams();
 
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
@@ -23,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      <ReadingProgress targetEl="#target-el" />
+      {id && <ReadingProgress targetEl="#target-el" />}
       <nav>
         <div className="nav-center">
           <div className="nav-header">
