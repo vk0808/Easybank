@@ -8,9 +8,6 @@ nav {
   justify-content: space-between;
   padding: 1rem 1rem 0.5rem;
 }
-.logo {
-  padding-bottom: 1rem;
-}
 .nav-header div {
   display: contents;
 }
